@@ -1,21 +1,23 @@
 <footer class="footer">
-    <a href="#"><img src="./images/ico-arrow.svg" alt="scroll down"></a>
+    <a href=#header><img class="footer__arrow" src="./images/ico-arrow.svg" alt="scroll down"></a>
     <nav>
         <ul>
-            <li>ARTICLES</li>
-            <li>BOOKS</li>
-            <li>EVENTS</li>
-            <li>REASONS</li>
-            <li>TIPS</li>
+            <li><a href={=$linkWeb}>ARTICLES</a></li>
+            <li><a href={=$linkWeb}>BOOKS</a></li>
+            <li><a href={=$linkWeb}>EVENTS</a></li>
+            <li><a href={=$linkWeb}>REASONS</a></li>
+            <li><a href={=$linkWeb}>TIPS</a></li>
         </ul>
     </nav>
     <nav>
         <ul>
-            <li>TWITTER</li>
-            <li>INSTAGRAM</li>
-            <li>MASTODON.SOCIAL</li>
+            <li><a href={=$linkWeb}>TWITTER</a></li>
+            <li><a href={=$linkWeb}>INSTAGRAM</a></li>
+            <li><a href={=$linkWeb}>MASTODON.SOCIAL</a></li>
         </ul>
     </nav>
-    <span>&copy;2022</span>
-    <span>we <i class="fa-solid fa-heart"></i> components</span>
+    <section class="footer__copyright">
+        <span>&copy;2022</span>
+        <span>we <i class="fa-solid fa-heart"></i> components</span>
+    </section>
 </footer>

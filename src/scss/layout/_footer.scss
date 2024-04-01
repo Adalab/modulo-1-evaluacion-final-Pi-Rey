@@ -1,0 +1,49 @@
+.footer{
+    background-color: $colorBlueDark;
+    color: $colorWhite;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    position: relative;
+
+    &__arrow{
+        background-color: $colorWhite;
+		width: 45px;
+		height: 45px;
+		padding: 9px;
+		padding-top: 10px;
+		border-radius: 50%;
+        box-shadow: 0px 2.5px 4px 0px black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    a{
+        color: $colorWhite;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    &__copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        
+        .fa-solid.fa-heart{
+        color: $colorOrangeButtons;
+    }
+    }
+
+}
