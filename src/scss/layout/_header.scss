@@ -1,0 +1,40 @@
+.header {
+  	height: 100vh;
+  	background-image: url(../images/cover.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	color: $colorWhite;
+
+  	position: relative;
+
+  	display: flex;
+  	flex-direction: column;
+  	gap: 20px;
+  	justify-content: center;
+  	align-items: center;
+  	flex-wrap: wrap;
+
+  	&__menu {
+    	background-color: $colorBlueMenu;
+    	padding: 6px;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+  	}
+
+  	&__title {
+    	margin-top: 250px;
+    	font-size: 42px;
+    	text-align: center;
+    	font-weight: bold;
+  	}
+
+	&__arrow{
+		background-color: $colorWhite;
+		width: 36px;
+		height: 36px;
+		padding: 7px;
+		padding-top: 10px;
+		border-radius: 50%;
+	}
+}
