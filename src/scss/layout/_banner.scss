@@ -27,4 +27,9 @@
         border: 2px solid $colorOrangeButtons;
         border-radius: 25px;
     }
+    &__buttonGo:hover {
+        background-color: $colorOrangeButtons;
+        color: $colorWhite;       
+        box-shadow: 0px 0px 15px 0px $colorOrangeButtons;
+    }
 }
