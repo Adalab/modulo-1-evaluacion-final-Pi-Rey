@@ -3,33 +3,47 @@
     padding: 25px 20px 60px 20px;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-rows: auto auto auto;
+    row-gap: 40px;
 
     /*mediaquerie tablet*/
 	@media screen and (width >= 768px){
-
+        padding: 30px 20px 60px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
 	}
 
     &__title{
         font-family: $fontTitles;
         font-size: 24px;
         font-weight: bold;
-
+        /*mediaquerie tablet*/
+	    @media screen and (width >= 768px){
+            grid-column: 1/4;
+            font-size: 26px;
+	    }
     }
     &__article{
         padding-left: 50px;
         padding-right: 50px;
         font-size: 18px;
-
+	    @media screen and (width >= 768px){
+            padding-left: 15px;
+            padding-right: 15px;
+	    }
         &--title{
             font-family: $fontTitles;
             font-weight: bold;
+            @media screen and (width >= 768px){
+                font-size: 24px;
+            }
         }
 
         &--text{
             margin-top: 10px;
             line-height: 1.6;
+            @media screen and (width >= 768px){
+                font-size: 20px;
+            }
         }
     }
     &__button{
@@ -42,6 +56,11 @@
         margin-left: 50px;
         margin-right: 50px;
         border-radius: 30px;
+        @media screen and (width >= 768px){
+            grid-column: 2/3;
+            margin-left: 15px;
+            margin-right: 15px;
+	    }
     }
     &__button:hover {
         background-color: $colorWhite;

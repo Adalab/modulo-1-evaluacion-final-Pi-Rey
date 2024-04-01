@@ -1,49 +1,69 @@
-.footer{
-    background-color: $colorBlueDark;
+.footer {
+  background-color: $colorBlueDark;
+  color: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  @media screen and (width >= 768px) {
+    padding-top: 50px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;  
+}
+
+  &__arrow {
+    background-color: $colorWhite;
+    width: 45px;
+    height: 45px;
+    padding: 9px;
+    padding-top: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 2.5px 4px 0px black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__menu {  
+    @media screen and (width >= 768px) {
+        order: 2;
+        padding-left: 90px;
+    }
+
+    &--ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      @media screen and (width >= 768px) {
+        align-items: flex-start;
+ 
+      }
+    }
+  }
+  a {
     color: $colorWhite;
-    display: flex; 
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    position: relative;
+    gap: 15px;
 
-    &__arrow{
-        background-color: $colorWhite;
-		width: 45px;
-		height: 45px;
-		padding: 9px;
-		padding-top: 10px;
-		border-radius: 50%;
-        box-shadow: 0px 2.5px 4px 0px black;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    @media screen and (width >= 768px) {
+      align-items: flex-start;
+      order: 1;
     }
 
-    ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    .fa-solid.fa-heart {
+      color: $colorOrangeButtons;
     }
-    a{
-        color: $colorWhite;
-        font-size: 16px;
-        text-decoration: none;
-    }
-
-    &__copyright{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        
-        .fa-solid.fa-heart{
-        color: $colorOrangeButtons;
-    }
-    }
-
+  }
 }
