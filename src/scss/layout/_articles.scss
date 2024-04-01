@@ -1,0 +1,40 @@
+.articles{
+    background-color: #eff9ff;
+    padding: 25px 20px 60px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    gap: 40px;
+
+    &__title{
+        font-family: $fontTitles;
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+    &__article{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 18px;
+
+        &--title{
+            font-family: $fontTitles;
+            font-weight: bold;
+        }
+
+        &--text{
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    }
+    &__button{
+        color: $colorWhite;
+        font-size: 20px;
+        background-color: $colorOrangeButtons;
+        padding: 10px 0;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 30px;
+    }
+}
