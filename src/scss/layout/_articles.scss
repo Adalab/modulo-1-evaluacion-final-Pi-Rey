@@ -11,6 +11,9 @@
         padding: 30px 20px 60px 20px;
         grid-template-columns: 1fr 1fr 1fr;
 	}
+    @media screen and (width >= 1280px){
+        padding-top: 60px;
+	}
 
     &__title{
         font-family: $fontTitles;
@@ -21,6 +24,9 @@
             grid-column: 1/4;
             font-size: 26px;
 	    }
+        @media screen and (width >= 1280px){
+            font-size: 32px;
+        }
     }
     &__article{
         padding-left: 50px;
@@ -29,6 +35,10 @@
 	    @media screen and (width >= 768px){
             padding-left: 15px;
             padding-right: 15px;
+	    }
+        @media screen and (width >= 1280px){
+            padding-left: 30px;
+            padding-right: 30px;
 	    }
         &--title{
             font-family: $fontTitles;
@@ -61,6 +71,10 @@
             margin-left: 15px;
             margin-right: 15px;
 	    }
+        @media screen and (width >= 1280px){
+            margin-left: 90px;
+            margin-right: 90px;
+        }
     }
     &__button:hover {
         background-color: $colorWhite;

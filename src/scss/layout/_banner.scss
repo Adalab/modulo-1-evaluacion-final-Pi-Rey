@@ -4,6 +4,9 @@
 	@media screen and (width >= 768px){
         padding: 37px 39px;
 	}
+    @media screen and (width >= 1280px){
+        padding: 37px 275px;
+    }
 
     &__subtitle{
         color: $colorBlueSky;
@@ -15,12 +18,18 @@
         font-size: 24px;
         font-weight: 900;
         line-height: 1.25;
+        @media screen and (width >= 1280px){
+            font-size: 32px;
+        }
     }
     &__text{
         margin-top: 20px;
         font-size: 18px;
         color: #4a4a4a;
         line-height: 1.6;
+        @media screen and (width >= 1280px){
+            font-size: 20px;
+        }
     }
     &__buttonGo{
         color: $colorOrangeButtons;
@@ -28,7 +37,7 @@
         display: inline-block;
         margin-top: 20px;
         font-size: 20px;
-        padding: 10px 25px;
+        padding: 10px 60px;
         border: 2px solid $colorOrangeButtons;
         border-radius: 25px;
     }
