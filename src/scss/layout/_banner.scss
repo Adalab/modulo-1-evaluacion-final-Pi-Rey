@@ -1,5 +1,10 @@
 .banner{
     padding: 37px 15px;
+		/*mediaquerie tablet*/
+	@media screen and (width >= 768px){
+        padding: 37px 39px;
+	}
+
     &__subtitle{
         color: $colorBlueSky;
         font-size: 16px;

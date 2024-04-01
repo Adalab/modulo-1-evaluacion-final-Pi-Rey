@@ -6,6 +6,11 @@
     grid-template-rows: auto 1fr 1fr 1fr;
     gap: 40px;
 
+    /*mediaquerie tablet*/
+	@media screen and (width >= 768px){
+
+	}
+
     &__title{
         font-family: $fontTitles;
         font-size: 24px;
