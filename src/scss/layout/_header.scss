@@ -1,83 +1,91 @@
 .header {
-  	height: 100vh;
-  	background-image: url(../images/cover.jpg);
-  	background-size: cover;
-  	background-position: center;
-  	color: $colorWhite;
+  height: 100vh;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  color: $colorWhite;
 
-  	position: relative;
+  position: relative;
 
-  	display: flex;
-  	flex-direction: column;
-  	gap: 20px;
-  	justify-content: center;
-  	align-items: center;
-  	flex-wrap: wrap; /*quizas quitar esta linea despues? creo que no hace nada*/
-		/*mediaquerie tablet*/
-		@media screen and (width >= 768px){
-			gap: 25px;
-		}
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 
-  	&__menu {
-    	background-color: $colorBlueMenu;
-    	padding: 6px;
-    	position: fixed;
-    	top: 0;
-    	left: 0;
+  /*mediaquerie tablet*/
+  @media screen and (width >= 768px) {
+    gap: 25px;
+  }
 
-		/*mediaquerie tablet*/
-		@media screen and (width >= 768px){
-			width: 40px;
-			padding: 10px;
-		}
-		@media screen and (width >= 1280px){
-			width: 44px;
-			padding: 10px;
-		}
-  	}
+  &__menu {
+    background-color: $colorBlueMenu;
+    padding: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
 
-  	&__title {
-    	margin-top: 215px;
-    	font-size: 42px;
-    	text-align: center;
-    	font-weight: bold;
-		font-family: $fontTitles;
-			/*mediaquerie tablet*/
-			@media screen and (width >= 768px){
-				margin-top: calc(100vh - 450px); /* quizás podría hacer esto con los paddings del lado*/
-				font-size: 80px;
-				line-height: 1.4;
-			}
-			@media screen and (width >= 1280px){
-				margin-top: calc(100vh - 500px);
-				font-size: 100px;
-				gap: 25px;
-				padding-left: 270px;
-				padding-right: 270px;
-			}
-  	}
-	
-	&__subtitle{
-		/*mediaquerie tablet*/
-		@media screen and (width >= 768px){
-			font-size: 24px;
-			padding: 0 250px;
-			text-align: center;
-			line-height: 1.3;
-		}
-	}
-	&__arrow{
-		background-color: $colorWhite;
-		width: 36px;
-		height: 36px;
-		padding: 7px;
-		padding-top: 10px;
-		border-radius: 50%;
-		@media screen and (width >= 1280px){
-			margin-top: 20px;
-			width: 48px;
-			height: 48px;
-			padding: 9px;
-		}
-	}
+    /*mediaquerie tablet*/
+    @media screen and (width >= 768px) {
+      width: 40px;
+      padding: 10px;
+    }
+      /*mediaquerie desktop*/
+    @media screen and (width >= 1280px) {
+      width: 44px;
+      padding: 10px;
+    }
+  }
+
+  &__title {
+    margin-top: 215px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    font-family: $fontTitles;
+
+    /*mediaquerie tablet*/
+    @media screen and (width >= 768px) {
+      margin-top: calc(
+        100vh - 450px
+      );
+      font-size: 80px;
+      line-height: 1.4;
+    }
+    
+    /*mediaquerie desktop*/
+    @media screen and (width >= 1280px) {
+      margin-top: calc(100vh - 500px);
+      font-size: 100px;
+      gap: 25px;
+      padding-left: 270px;
+      padding-right: 270px;
+    }
+  }
+
+  &__subtitle {
+    /*mediaquerie tablet*/
+    @media screen and (width >= 768px) {
+      font-size: 24px;
+      padding: 0 250px;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+  &__arrow {
+    background-color: $colorWhite;
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+    padding-top: 10px;
+    border-radius: 50%;
+    
+    /*mediaquerie desktop*/
+    @media screen and (width >= 1280px) {
+      margin-top: 20px;
+      width: 48px;
+      height: 48px;
+      padding: 9px;
+    }
+  }
 }
