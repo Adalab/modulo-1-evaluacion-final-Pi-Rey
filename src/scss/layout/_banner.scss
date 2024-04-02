@@ -38,10 +38,14 @@
     display: inline-block;
     margin-top: 20px;
     font-size: 20px;
-    padding: 10px 60px;
+    padding: 10px 30px;
     border: 2px solid $colorOrangeButtons;
     border-radius: 25px;
     transition: all 1s;
+    /*mediaquerie desktop*/
+    @media screen and (width >= 1280px) {
+      padding: 10px 60px;
+    }
   }
   &__buttonGo:hover {
     background-color: $colorOrangeButtons;
