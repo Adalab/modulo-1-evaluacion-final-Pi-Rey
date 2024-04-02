@@ -66,6 +66,8 @@
         margin-left: 50px;
         margin-right: 50px;
         border-radius: 30px;
+        transition: all 1s;
+
         @media screen and (width >= 768px){
             grid-column: 2/3;
             margin-left: 15px;
@@ -81,5 +83,6 @@
         color: $colorOrangeButtons;
         border: 2px solid $colorOrangeButtons;
         box-shadow: 0px 0px 15px 0px $colorOrangeButtons;
+        transform: scale(1.1);
     }
 }

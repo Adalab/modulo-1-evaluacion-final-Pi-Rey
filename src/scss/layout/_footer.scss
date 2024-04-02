@@ -12,13 +12,12 @@
     padding-top: 50px;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: start;  
-}
-@media screen and (width >= 1280px) {
-    justify-content: center;  
+    justify-content: start;
+  }
+  @media screen and (width >= 1280px) {
+    justify-content: center;
     gap: 60px;
-}
-
+  }
 
   &__arrow {
     background-color: $colorWhite;
@@ -33,14 +32,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  &__menu {  
+  &__menu {
     @media screen and (width >= 768px) {
-        order: 2;
-        padding-left: 90px;
+      order: 2;
+      padding-left: 90px;
     }
     @media screen and (width >= 1280px) {
-        padding-left: 0;
-        padding-right: 90px;
+      padding-left: 0;
+      padding-right: 90px;
     }
 
     &--ul {
@@ -50,14 +49,13 @@
       gap: 15px;
       @media screen and (width >= 768px) {
         align-items: flex-start;
- 
+      }
+      &.link {
+        color: $colorWhite;
+        font-size: 16px;
+        text-decoration: none;
       }
     }
-  }
-  a {
-    color: $colorWhite;
-    font-size: 16px;
-    text-decoration: none;
   }
 
   &__copyright {

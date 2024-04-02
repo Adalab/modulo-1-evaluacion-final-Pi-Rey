@@ -44,12 +44,12 @@
 		font-family: $fontTitles;
 			/*mediaquerie tablet*/
 			@media screen and (width >= 768px){
-				margin-top: 290px;
+				margin-top: calc(100vh - 450px); /* quizás podría hacer esto con los paddings del lado*/
 				font-size: 80px;
 				line-height: 1.4;
 			}
 			@media screen and (width >= 1280px){
-				margin-top: 400px;
+				margin-top: calc(100vh - 500px);
 				font-size: 100px;
 				gap: 25px;
 				padding-left: 270px;
